@@ -1,6 +1,6 @@
-push: clean
+git: clean
 	@git add .
-	@git commit -m $m --quiet
+	@git commit -m "$m" --quiet
 	@git push origin main --quiet
 
 get:
