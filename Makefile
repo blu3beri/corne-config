@@ -2,8 +2,8 @@ push: clean
 	@echo "Commit message: "
 	@read MSG
 	@git add .
-	@git commit -sm $MSG
-	@git push origin main
+	@git commit -sm $MSG --quiet
+	@git push origin main --quiet
 
 get:
 	@gh run download --name firmware --dir build
