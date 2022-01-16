@@ -1,6 +1,7 @@
 push: clean
+	read MSG
 	git add .
-	git commit -sm "new keymap"
+	git commit -sm $MSG
 	git push origin main
 
 get:
