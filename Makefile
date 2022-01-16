@@ -1,6 +1,5 @@
 push: clean
-	@echo "Commit message: "
-	@read MSG
+	@read -p "Commit message: " MSG
 	@git add .
 	@git commit -sm $MSG --quiet
 	@git push origin main --quiet
